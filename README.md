@@ -1,6 +1,6 @@
 # MindForge – Full Stack Generative AI Agent
 
-## 📌 Overview
+## Overview
 
 MindForge is a full stack Generative AI agent application designed to help users convert unclear personal or academic goals into structured, actionable plans.
 
@@ -10,20 +10,20 @@ This project was developed as part of an academic assessment requiring a **live 
 
 ---
 
-## 🚀 Live Application
+## Live Application
 
 **Live URL:**  
 https://your-deployed-url-here
 
 ---
 
-## 📂 GitHub Repository
+## GitHub Repository
 
 https://github.com/your-username/mindforge-ai-agent
 
 ---
 
-## 🎯 Problem Statement
+## Problem Statement
 
 Many individuals struggle with:
 - unclear goals  
@@ -37,7 +37,7 @@ MindForge solves this problem by generating **schema-validated, structured execu
 
 ---
 
-## 💡 Solution Approach
+## Solution Approach
 
 MindForge implements a **Pydantic AI–based agent system** where:
 
@@ -51,7 +51,7 @@ This approach improves consistency, reliability, and usability.
 
 ---
 
-## 🧠 Key Features
+## Key Features
 
 - Full stack Generative AI agent
 - Mandatory use of **Pydantic AI**
@@ -64,7 +64,7 @@ This approach improves consistency, reliability, and usability.
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 This project demonstrates a type-safe, schema-validated AI pipeline:
 
