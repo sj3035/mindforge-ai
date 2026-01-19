@@ -13,13 +13,13 @@ This project was developed as part of an academic assessment requiring a **live 
 ## Live Application
 
 **Live URL:**  
-https://your-deployed-url-here
+https://mindforge-ai-psi.vercel.app/
 
 ---
 
 ## GitHub Repository
 
-https://github.com/your-username/mindforge-ai-agent
+https://github.com/sj3035/mindforge-ai.git
 
 ---
 
