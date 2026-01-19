@@ -1,73 +1,77 @@
-# Welcome to your Lovable project
+# MindForge – Full Stack Generative AI Agent
 
-## Project info
+## 📌 Overview
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+MindForge is a full stack Generative AI agent application designed to help users convert unclear personal or academic goals into structured, actionable plans.
 
-## How can I edit this code?
+The system is built using **Pydantic AI**, enabling strict schema validation and reliable agent orchestration rather than unstructured chatbot-style responses.
 
-There are several ways of editing your application.
+This project was developed as part of an academic assessment requiring a **live deployed, end-to-end usable AI agent system**.
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## 🚀 Live Application
 
-Changes made via Lovable will be committed automatically to this repo.
+**Live URL:**  
+https://your-deployed-url-here
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 📂 GitHub Repository
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+https://github.com/your-username/mindforge-ai-agent
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🎯 Problem Statement
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Many individuals struggle with:
+- unclear goals  
+- difficulty breaking tasks into steps  
+- decision fatigue  
+- lack of structured planning  
 
-# Step 3: Install the necessary dependencies.
-npm i
+Most AI tools generate free-form text that is hard to act upon.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+MindForge solves this problem by generating **schema-validated, structured execution plans** using a controlled AI agent architecture.
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 💡 Solution Approach
 
-**Use GitHub Codespaces**
+MindForge implements a **Pydantic AI–based agent system** where:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- user inputs are validated using Pydantic schemas
+- the agent reasons over validated data
+- outputs must strictly conform to predefined structures
+- retry and fallback logic ensures reliability
+- results are presented through a clean and intuitive UI
 
-## What technologies are used for this project?
+This approach improves consistency, reliability, and usability.
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🧠 Key Features
 
-## How can I deploy this project?
+- Full stack Generative AI agent
+- Mandatory use of **Pydantic AI**
+- Strict input and output validation
+- Structured goal planning output
+- Clean UX and smooth product flow
+- Loading and error handling states
+- Free LLM usage via OpenRouter
+- Live deployed and fully functional
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+## 🏗️ System Architecture
 
-Yes, you can!
+This project demonstrates a type-safe, schema-validated AI pipeline:
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+1.  **Frontend (Lovable.dev):** A high-fidelity React UI that sends structured user goals to the API.
+2.  **Backend (FastAPI):** A Python-based middleware that manages the agent's lifecycle and logic.
+3.  **Pydantic AI Agent:** Uses Pydantic's powerful validation to ensure LLM outputs are structured and predictable.
+4.  **OpenRouter (LLM):** Connects to free or low-cost models (Phi-3, Mistral, Gemma) to process reasoning tasks.
+5.  **Schema Validation:** Ensures the UI only receives data that matches the frontend's expected types.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+---
