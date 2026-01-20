@@ -377,13 +377,11 @@ async function callLLM(
     requestBody.tool_choice = 'auto';
   }
   
-  const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+  const response = await fetch('https://ai.gateway.lovable.dev/v1/chat/completions', {
     method: 'POST',
     headers: {
       'Authorization': `Bearer ${config.apiKey}`,
       'Content-Type': 'application/json',
-      'HTTP-Referer': 'https://mindforge.lovable.app',
-      'X-Title': 'MindForge Planning Agent',
     },
     body: JSON.stringify(requestBody),
   });
@@ -730,17 +728,17 @@ serve(async (req) => {
     const input = validateInput(body);
     console.log(`[Agent] Input validated - Goal: "${input.goal.substring(0, 50)}...", Priority: ${input.priority}`);
 
-    // Get API key
-    const OPENROUTER_API_KEY = Deno.env.get('OPENROUTER_API_KEY');
-    if (!OPENROUTER_API_KEY) {
-      console.error('[Agent] OPENROUTER_API_KEY not configured');
-      throw new Error('OpenRouter API key is not configured');
+    // Get API key - Lovable AI Gateway (auto-configured)
+    const LOVABLE_API_KEY = Deno.env.get('LOVABLE_API_KEY');
+    if (!LOVABLE_API_KEY) {
+      console.error('[Agent] LOVABLE_API_KEY not configured');
+      throw new Error('Lovable AI key is not configured');
     }
 
-    // Configure LLM - Using Google Gemma 3 free model on OpenRouter
+    // Configure LLM - Using Lovable AI Gateway with Gemini Flash
     const llmConfig: LLMConfig = {
-      apiKey: OPENROUTER_API_KEY,
-      model: 'google/gemma-3-1b-it:free',
+      apiKey: LOVABLE_API_KEY,
+      model: 'google/gemini-3-flash-preview',
       temperature: 0.7,
       maxTokens: 1500,
     };
