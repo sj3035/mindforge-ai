@@ -737,10 +737,10 @@ serve(async (req) => {
       throw new Error('OpenRouter API key is not configured');
     }
 
-    // Configure LLM
+    // Configure LLM - Using Google Gemma 3 free model on OpenRouter
     const llmConfig: LLMConfig = {
       apiKey: OPENROUTER_API_KEY,
-      model: 'mistralai/mistral-7b-instruct:free',
+      model: 'google/gemma-3-1b-it:free',
       temperature: 0.7,
       maxTokens: 1500,
     };
